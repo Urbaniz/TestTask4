@@ -6,3 +6,11 @@ create table SKU(
     constraint PK_SKU primary key (ID),
     constraint UK_SKU_Code unique (Code)
 )
+
+-- Создание таблицы Family
+create table Family(
+    ID int not null identity,
+    SurName varchar(255) not null,
+    BudgetValue int not null,
+    constraint PK_Family primary key (ID)
+)
