@@ -6,7 +6,7 @@ as
 begin
 	declare @SKUPrice decimal(18, 2)
 
-	select @SKUPrice = SUM(Value)/SUM(Quantity)
+	select @SKUPrice = sum(Value)/sum(Quantity)
 	from dbo.Basket
 	where ID_SKU = @ID_SKU
 	
